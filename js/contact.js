@@ -18,8 +18,8 @@ function Contact() {
                     <div class="contact-item">
                         <i class="fa-solid fa-envelope"></i>
 
-                        <a href="mailto:bvlegales@mail.com">
-                            bvlegales@mail.com
+                        <a href="mailto:bvlegales@gmail.com">
+                            bvlegales@gmail.com
                         </a>
                     </div>
 
