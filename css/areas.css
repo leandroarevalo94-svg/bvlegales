@@ -1,0 +1,126 @@
+.areas{
+
+    padding:140px 10%;
+
+    background:#F8FAFC;
+
+}
+
+.areas-container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.areas h2{
+
+    font-size:46px;
+
+    color:#163A70;
+
+    margin:20px 0;
+
+}
+
+.areas-container>p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#6B7280;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+}
+
+.cards{
+
+    margin-top:80px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:45px;
+
+    text-align:left;
+
+    border:1px solid #ECECEC;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#C49B3A;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.icon svg {
+    width: 32px;
+    height: 32px;
+    color: #C9A227; /* dorado elegante, ajustalo a tu paleta */
+}
+
+.card h3{
+
+    color:#163A70;
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+}
+
+.card p{
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+}
+
+@media (max-width: 768px) {
+    .areas{
+        padding:80px 6%;
+    }
+    .areas h2{
+        font-size:28px;
+    }
+    .areas-container>p{
+        font-size:16px;
+    }
+    .cards{
+        grid-template-columns:1fr;
+        margin-top:50px;
+        gap:20px;
+    }
+    .card{
+        padding:30px;
+    }
+    .card h3{
+        font-size:22px;
+    }
+}
