@@ -1,113 +1,72 @@
 .hero{
-
     width:100%;
-
     min-height:100vh;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     padding:120px 40px;
-
-    background:#F8F5F0;
-
+    background:url("../assets/Fondo1.png") 90% 0%/cover no-repeat;
+    position:relative;
 }
-
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
 .hero-content{
-
     max-width:900px;
-
     text-align:center;
-
+    position:relative;
+    z-index:1;
 }
-
 .hero h1{
-
-    font-size:58px;
-
-    line-height:1.15;
-
-    color:#163A70;
-
-    margin-bottom:25px;
-
-    font-weight:700;
-
+    color:white;
 }
-
 .hero p{
-
     font-size:22px;
-
-    color:#6b7280;
-
+    color:
+#E5E7EB;
     line-height:1.7;
-
     margin-bottom:50px;
-
 }
-
 .hero-buttons{
-
     display:none;
-
 }
-
 .primary{
-
     margin-top:20px;
-
-    background:#163A70;
-
+    background:
+#163A70;
     color:white;
-
     padding:18px 40px;
-
     border-radius:10px;
-
     font-size:16px;
-
     transition:.25s;
-
 }
-
 .primary:hover{
-
     transform:translateY(-3px);
-
-    background:#1d4d92;
-
+    background:
+#1d4d92;
 }
-
 .secondary{
-
-    border:2px solid #163A70;
-
-    color:#163A70;
-
+    border:2px solid 
+#163A70;
+    color:
+#163A70;
     padding:16px 34px;
-
     border-radius:10px;
-
     transition:.25s;
-
 }
-
 .secondary:hover{
-
-    background:#163A70;
-
+    background:
+#163A70;
     color:white;
-
 }
-
 @media (max-width: 768px) {
     .hero{
         padding:100px 24px;
         min-height:auto;
+        background-position: 95% 0%;
     }
     .hero h1{
         font-size:32px;
